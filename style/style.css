@@ -1,17 +1,29 @@
-html, body{
+html{
   width: 100vw;
+  text-align: center;
+}
+
+body{
+  display: flex;
+  justify-content: center;
 }
 
 .app-container{
   display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.todo-list-item{
+  display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 
 .w-100{
   width: 100% !important;
 }
 
-.w-50{
-  width: 50% !important;
+.margin-h-1{
+  padding-inline: 16px !important;
 }
