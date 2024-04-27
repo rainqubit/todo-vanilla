@@ -18,9 +18,12 @@ clearBtn.addEventListener("click", handleClear)
 function handleAdd(event){
   if(event.key === "Enter"){
     event.preventDefault()
-    setItemAdd(event.srcElement.value)
-    todoInput.value = ""
-    render()
+    const inputText = event.srcElement.value
+    if(inputText !== null && inputText !== ""){
+      setItemAdd(inputText)
+      todoInput.value = ""
+      render()
+    }
   }
 }
 
