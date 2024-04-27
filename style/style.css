@@ -1,0 +1,17 @@
+html, body{
+  width: 100vw;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.w-100{
+  width: 100% !important;
+}
+
+.w-50{
+  width: 50% !important;
+}
