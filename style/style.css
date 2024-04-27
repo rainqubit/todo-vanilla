@@ -11,17 +11,25 @@ body{
 .app-container{
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  width: 100%;
+  max-width: 480px;
+  padding-inline: 16px;
 }
 
 .todo-list-item{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
-.w-100{
-  width: 100% !important;
+.todo-list-item-text{
+  flex-grow: 1;
+  text-align: left;
+}
+
+.item-done > span{
+  text-decoration: line-through;
 }
 
 .margin-h-1{
